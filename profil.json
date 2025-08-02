@@ -1,0 +1,28 @@
+{
+  "nama": "Nama Lengkap Anda",
+  "foto": "avatar.jpg",
+  "pekerjaan": "Profesi Anda",
+  "lokasi": "Kota, Negara",
+  "status": "Status saat ini...",
+  "bio": "Deskripsi singkat tentang diri Anda...",
+  "kontak": {
+    "email": "email@contoh.com",
+    "telepon": "+62 812-XXXX-XXXX",
+    "website": "https://websiteanda.com",
+    "github": "githubusername",
+    "linkedin": "linkedinusername"
+  },
+  "keahlian": ["HTML", "CSS", "JavaScript", "UI/UX"],
+  "proyek": [
+    {
+      "nama": "Nama Proyek 1",
+      "deskripsi": "Deskripsi singkat proyek",
+      "tahun": 2023
+    },
+    {
+      "nama": "Nama Proyek 2",
+      "deskripsi": "Deskripsi singkat proyek",
+      "tahun": 2024
+    }
+  ]
+}
