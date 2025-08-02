@@ -1,3 +1,34 @@
+// Fungsi baru untuk load JSON tambahan
+async function loadJSONData(filename) {
+  const response = await fetch(filename);
+  return await response.json();
+}
+
+// Contoh penggunaan:
+document.addEventListener('DOMContentLoaded', async () => {
+  const profil = await muatProfil();
+  
+  // Load data tambahan jika ada
+  if (profil.fiturtambahan) {
+    const blog = await loadJSONData('blog.json');
+    renderBlog(blog);
+  }
+});
+
+// Contoh render function
+function renderBlog(articles) {
+  const container = document.createElement('section');
+  articles.forEach(article => {
+    container.innerHTML += `
+      <article>
+        <h3>${article.judul}</h3>
+        <p>${article.konten.substring(0, 100)}...</p>
+      </article>
+    `;
+  });
+  document.body.appendChild(container);
+}
+
 // Fungsi untuk memuat data profil
 async function muatProfil() {
     const response = await fetch('profil.json');
