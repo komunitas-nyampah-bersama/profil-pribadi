@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "judul": "Tips Belajar Programming",
+    "tanggal": "2024-06-15",
+    "konten": "Isi artikel lengkap di sini..."
+  },
+  {
+    "id": 2,
+    "judul": "Pengalaman Build Aplikasi",
+    "tanggal": "2024-07-20",
+    "konten": "Cerita pengembangan aplikasi..."
+  }
+]
