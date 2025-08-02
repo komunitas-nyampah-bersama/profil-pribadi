@@ -12,6 +12,11 @@
     "github": "githubusername",
     "linkedin": "linkedinusername"
   },
+  "sosmed": {
+  "instagram": "@username",
+  "twitter": "@handle",
+  "tiktok": "@id"
+}
   "keahlian": ["HTML", "CSS", "JavaScript", "UI/UX"],
   "proyek": [
     {
