@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Bagian Header Profil -->
+        <header class="profil-header">
+            <div class="foto-profil">
+                <img id="foto" src="avatar.jpg" alt="Foto Profil">
+                <input type="file" id="upload-foto" accept="image/*" style="display:none">
+                <button id="ganti-foto">Ganti Foto</button>
+            </div>
+            <div class="info-profil">
+                <h1 contenteditable="true" id="nama">Nama Lengkap</h1>
+                <p contenteditable="true" id="pekerjaan">Profesi</p>
+                <p contenteditable="true" id="lokasi">Lokasi</p>
+            </div>
+        </header>
+
+        <!-- Bagian Konten Utama -->
+        <main>
+            <section class="status-box">
+                <textarea id="status" placeholder="Apa yang sedang Anda pikirkan?">Status saat ini...</textarea>
+                <button id="update-status">Update Status</button>
+            </section>
+
+            <section class="bio-section">
+                <h2>Tentang Saya</h2>
+                <textarea id="bio">Deskripsi tentang diri Anda...</textarea>
+            </section>
+
+            <section class="kontak-section">
+                <h2>Kontak</h2>
+                <div class="kontak-list">
+                    <div class="kontak-item">
+                        <label>Email:</label>
+                        <input type="email" id="email" value="email@contoh.com">
+                    </div>
+                    <div class="kontak-item">
+                        <label>Telepon:</label>
+                        <input type="tel" id="telepon" value="+62 812-XXXX-XXXX">
+                    </div>
+                    <!-- Tambahkan field kontak lainnya -->
+                </div>
+            </section>
+
+            <section class="keahlian-section">
+                <h2>Keahlian</h2>
+                <div id="keahlian-list">
+                    <!-- Keahlian akan di-generate oleh JavaScript -->
+                </div>
+                <input type="text" id="tambah-keahlian" placeholder="Tambah keahlian">
+                <button id="tambah-keahlian-btn">Tambah</button>
+            </section>
+        </main>
+
+        <!-- Tombol Simpan -->
+        <footer>
+            <button id="simpan-profil">Simpan Perubahan</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
