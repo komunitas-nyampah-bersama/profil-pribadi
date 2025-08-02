@@ -1,0 +1,12 @@
+name: Update Profil
+on:
+  schedule:
+    - cron: '0 0 * * *' # Jalankan tiap hari
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Update status otomatis
+      run: |
+        sed -i 's/"status": ".*"/"status": "Status update terbaru $(date)"/' profil.json
